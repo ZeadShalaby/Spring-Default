@@ -1,7 +1,7 @@
 <br/>
 <p align="center">
   <a href="https://github.com/ZeadShalaby/Spring-Default">
-          <img src="https://imgur.com/mbFqm1i.png?w=1600" alt="Logo" width="470" height="370">
+          <img src="https://imgur.com/mbFqm1i.png?w=1600" alt="Logo" width="450" height="400">
     
   </a>
 
@@ -47,10 +47,9 @@
     mvn spring-boot:run
     
 ## Aspects of the System
-● LoggingAspect: Implement a logging aspect to log method calls and execution times.
-● The aspect logs the method name, arguments, and execution time for each method call.
-● The aspect should be applied to all service classes in the system.
-# Author and Developed by
+* LoggingAspect: Implement a logging aspect to log method calls and execution times.
+* The aspect logs the method name, arguments, and execution time for each method call.
+* The aspect should be applied to all service classes in the system.
 
 ## Contributing
 
