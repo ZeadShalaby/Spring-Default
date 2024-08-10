@@ -1,4 +1,4 @@
-package com.example.deafult.project.Enums;
+package com.deafult.project.Enums;
 
 public enum Role {
     ADMIN(1),

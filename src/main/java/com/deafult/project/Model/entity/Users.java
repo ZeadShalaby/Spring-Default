@@ -1,39 +1,46 @@
-package com.example.deafult.project.Model.entity;
+package com.deafult.project.Model.entity;
 
-import com.example.deafult.project.Enums.Role;
-import com.example.deafult.project.Enums.Gender;
+import com.deafult.project.Enums.Role;
+import com.deafult.project.Enums.Gender;
 import java.time.LocalDateTime;
 import jakarta.persistence.*;
 import lombok.*;
+import java.util.Date;
 
-@Table(name = "users")
+
+
+@Table(name = "Users")
 @Entity
 @Data
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class users {
+public class Users {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
     private Integer id;
 
-    @Column(nullable = false)
+    @Column(name = "name" , nullable = false)
     private String name;     //     @Column(name = "name_user") change name in database
 
-    @Column(unique = true,nullable = false)
+    @Column(name = "email" , unique = true , nullable = false)
     private String email;
 
-    @Column(nullable = false)
+    @Column(name = "password" , nullable = false)
     private String password;
 
     @Enumerated(EnumType.STRING)
-    @Column(nullable = false)
+    @Column(name = "role" , nullable = false)
     private Role role;
 
     @Enumerated(EnumType.STRING)
-    @Column(nullable = false)
+    @Column(name = "gender" , nullable = false)
     private Gender gender;
+
+    @Column(name = "birthday" , nullable = false)
+    private Date birthday;
 
     @Column(name = "created_at")
     private LocalDateTime createdAt;
